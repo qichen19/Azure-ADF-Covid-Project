@@ -1,0 +1,12 @@
+{
+	"name": "covid_project_ls_abs",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=covidprojectstorage1;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDEzQ0Y4MTQ3LTZEMjAtNDk2Ri04RERDLTkxOTk1NTlGREYzMl9iNzgxNTU2My1jNzE4LTRhN2MtYTBlNi1mNDk4YmRhMDU2MDYiDQp9"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "covid-project-adf-1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bf167f03-3e72-4a3b-a901-62d6752077fd",
+		"tenantId": "11e38d91-3b56-4236-ae0d-6472b524e6ba"
+	}
+}
