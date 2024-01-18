@@ -29,7 +29,16 @@ All project-related resources are available in the Azure-ADF-Resources repositor
 * SQL scripts for creating a database within Azure SQL are contained in the 'SQL' folder.
 
 ## Pipelines
+Population Data <br />
 
+The population data will initially be ingested from Azure Blob Storage to Azure Data Lake Gen2 through the Copy Activity within Azure Data Factory. Following the ingestion, the population data will undergo a series of data transformations outlined in Python notebooks using Databricks. These transformations, orchestrated by Azure Data Factory, aim to achieve the desired data format.
+
+Hospital Admission Data & Cases and Deaths Data <br />
+
+
+
+
+Test Data <Br />
 
 ## Usage
 Clone the repository and set up Azure Data Factory with the necessary configurations.<br />
