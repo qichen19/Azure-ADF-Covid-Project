@@ -39,19 +39,26 @@ All project-related resources are available in the Azure-ADF-Resources repositor
 
 Link to access the data: https://github.com/qichen19/Azure-ADF-Resources/tree/master/population%20data <br />
 
+![image](https://github.com/qichen19/Azure-ADF-Covid-Project/assets/57600028/096e1bae-e80c-402f-b15b-f72c81941254)
+
+
 The population data will initially be ingested from Azure Blob Storage to Azure Data Lake Gen2 through the Copy Activity within Azure Data Factory. Following the ingestion, the population data will undergo a series of data transformations outlined in Python notebooks using Databricks. These transformations, orchestrated by Azure Data Factory, aim to achieve the desired data format. An event-based trigger has been incorporated into the pipeline. This ensures that whenever population data is uploaded, it automatically initiates the entire ETL process.
 
 **Hospital Admission Data & Cases and Deaths Data** <br />
 
 Link to access the data: https://github.com/qichen19/Azure-ADF-Resources/tree/master/covid%20data%20from%20ecdc <br />
+![image](https://github.com/qichen19/Azure-ADF-Covid-Project/assets/57600028/8de443c9-7eb6-4dfe-9b2a-bbd31c617bdc)
 
 The initial hospital admission data, as well as cases and deaths data, will be ingested into Azure Data Lake Storage Gen2 using the HTTP connector. Subsequently, a sequence of data transformations will take place through the data flow feature within Azure Data Factory. These transformations encompass various stages such as source transformation, select transformation, lookup transformation, pivot transformation, derived column transformation, aggregate transformation, sort transformation, join transformation, and more. Once the data is transformed, it will be stored back into Azure Data Lake Storage Gen2 and also persisted in an Azure SQL database. The consumption of this transformed data will be done through Power BI, which will create dashboards and reports based on real-time data sourced from the Azure SQL database. A tumbling window trigger has been integrated into this pipeline, enabling the ETL process to be executed on a regular basis.
 
-**Test Data** <Br />
+**Testing Data** <Br />
 
 Link to access the data: https://github.com/qichen19/Azure-ADF-Resources/tree/master/covid%20data%20from%20ecdc <br />
 
-The test data will initially undergo ingestion into Azure Data Lake Storage Gen2 using the HTTP connector. Following this, a sequence of data transformations will be applied using Hive scripts on Azure HDInsights, orchestrated by Azure Data Factory. The resulting transformed data will be stored in an Azure SQL database. PowerBI will then be employed to consume data from the Azure SQL database, enabling the creation of dashboards and reports based on real-time data. A tumbling window trigger has been integrated into this pipeline, enabling the ETL process to be executed on a regular basis.
+![image](https://github.com/qichen19/Azure-ADF-Covid-Project/assets/57600028/d8eaa35b-aadd-4d0d-b64b-8c8c01259627)
+
+
+The covid testing data will initially undergo ingestion into Azure Data Lake Storage Gen2 using the HTTP connector. Following this, a sequence of data transformations will be applied using Hive scripts on Azure HDInsights, orchestrated by Azure Data Factory. The resulting transformed data will be stored in an Azure SQL database. PowerBI will then be employed to consume data from the Azure SQL database, enabling the creation of dashboards and reports based on real-time data. A tumbling window trigger has been integrated into this pipeline, enabling the ETL process to be executed on a regular basis.
 
 
 
