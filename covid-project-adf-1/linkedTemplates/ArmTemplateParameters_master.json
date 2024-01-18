@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covid-project-adf-1"
+		},
+		"covid_project_ls_abs_connectionString": {
+			"value": ""
+		},
+		"covid_project_ls_adl_accountKey": {
+			"value": ""
+		},
+		"db_covid_cluster_ls_accessToken": {
+			"value": ""
+		},
+		"sql_covid_db_ls_connectionString": {
+			"value": ""
+		},
+		"covid_project_ls_adl_properties_typeProperties_url": {
+			"value": "https://covidprojectdatalake1.dfs.core.windows.net/"
+		},
+		"db_covid_cluster_ls_properties_typeProperties_existingClusterId": {
+			"value": "1221-162738-b7ycj0t6"
+		},
+		"http_ecdc_ls_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"tr_population_data_arrive_properties_typeProperties_scope": {
+			"value": "/subscriptions/7a5b8a95-0864-4738-9a18-648b695b1250/resourceGroups/covid-project-rg/providers/Microsoft.Storage/storageAccounts/covidprojectstorage1"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
